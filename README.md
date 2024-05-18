@@ -13,6 +13,7 @@ In this lab, we will be creating a management frame attack of deauthentication a
 
 ### What is the MAC address of the device that is already connected to the access point? 
 **MAC Address:** 0A:7C:AF:CA:B8:E6
+![lab1](https://github.com/alduralmknoon/WiFi-Deauthentication-Lab/assets/27437815/e824e846-eac4-43f7-a278-a40892637a8f)
 
 Screenshot of the command used to deauthenticate or the deauthentication process.
 
