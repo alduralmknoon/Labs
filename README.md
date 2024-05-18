@@ -11,7 +11,7 @@ In this lab, we will be creating a management frame attack of deauthentication a
 
 **AUTh:** PSK
 
-### What is the MAC address of the device that is already connected to the access point? Include screenshots of the results
+### What is the MAC address of the device that is already connected to the access point? 
 **MAC Address:** 0A:7C:AF:CA:B8:E6
 
 Screenshot of the command used to deauthenticate or the deauthentication process.
@@ -28,14 +28,14 @@ The first packet is sent by the AP “TendaTec”. It contains the ANounce of th
 #### What does the second packet in the 4-way handshake authentication of WPA-PSK contain? What will the receiving device do with this information? Is it sent by the access point or the client device?
 The second packet is sent from the client to the AP, it contains the SNounce and the MIC. The receiving AP will use it to construct the PTK.
 
-#### What does the third packet in the 4-way handshake authentication of WPA-PSK contain? Is it sent by the access point or the client device? Include a screenshot of the packet.
+#### What does the third packet in the 4-way handshake authentication of WPA-PSK contain? Is it sent by the access point or the client device? 
 The third packet is sent by the AP to the client. It contains the GTK and MIC. “RSC” is the starting number of GTK.
 
-#### What does the fourth packet in the 4-way handshake authentication of WPA-PSK contain? Is it sent by the access point or the client device? Include a screenshot of the packet.
+#### What does the fourth packet in the 4-way handshake authentication of WPA-PSK contain? Is it sent by the access point or the client device?
 The fourth packet is sent by the client to the AP. It is an ACK packet.
 
 ### Password Cracking
-#### What is the password? Include a screenshot of aircrack-ng with the password cracked.
+#### What is the password?
 **Password:** CY20sec23GMU
 
 ## Wordlist Generation
@@ -69,7 +69,7 @@ The total possibilities for upper and lower case for each base are the following
 I used ChatGPT to write me the following code that will print me all the combinations for upper and lower cases. I ran the code for each base string.
 
 ### Python file: 
-casesLAB5.py
+cases.py
 
 ### Output files:
 - masoncyse.txt
@@ -123,7 +123,7 @@ We need to do the same for each of the 512 variations.
 So, using ChatGPT, I used a Python code that double loops around the string with the number’s permutations. I ran the strings lists for each base dictionary through this code to get the final list file for each string. The output from here will be the final wordlist used in Aircrack-ng.
 
 ### Python file: 
-numbersLAB5.py
+numbers.py
 
 ### Output files:
 - Cysegmu_output.lst
